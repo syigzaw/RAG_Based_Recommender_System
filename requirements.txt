@@ -1,0 +1,6 @@
+faiss-cpu
+langchain_community
+langchain_unstructured
+langchain_huggingface
+streamlit
+gdown
