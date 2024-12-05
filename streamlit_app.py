@@ -21,7 +21,7 @@ def downloadResources(images_id, faiss_id, pickle_id):
         futures = []
         vector_store_futures = [(executor.submit(
             HuggingFaceEmbeddings,
-            model_name='sentence-transformers/all-mpnet-base-v2',
+            model_name='sentence-transformers/all-MiniLM-L6-v2',
             cache_folder='./'
         ))]
 
@@ -37,7 +37,7 @@ def downloadResources(images_id, faiss_id, pickle_id):
             vector_store_futures[0].result(),
             allow_dangerous_deserialization=True
         ))
-        wait(futures)        
+        wait(futures)
 
     return futures[-1].result()
 
@@ -80,8 +80,8 @@ def run(input, num_of_images):
                     with st.container(border=True):
                         st.image(
                             image,
-                            caption=res.page_content.split('\t')[1],
-                            use_column_width=True
+                            caption=res.metadata['description'],
+                            use_container_width=True
                         )
                 count += 1
                 bar.progress(count/num_of_images)
