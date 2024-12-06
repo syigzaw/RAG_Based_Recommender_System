@@ -99,9 +99,9 @@ input = input_col.text_input('Enter a URL or text to see recommended ads for it.
 num_of_images = slider_col.slider('Number of ads to show', value=50)
 
 vector_store = downloadResources(
-    images_id='14IaKqzkmVE1mmtxNN94wwNMZeqImvYdz',
-    faiss_id='1yLKdvBrHGa6sOMV_shBp_KXjgvnoP_16',
-    pickle_id='13sRiQjF_ELo7xclc2y-24EaysJ6o-4h0'
+    images_id='10kJgHvweNbmfpl-u8br0_5aiXDffT7Pb',
+    faiss_id='1OuRe9DGkVxFi3Lbx4jDecDg2XIfEXC-L',
+    pickle_id='13hKvxiWR5WscWK2BxE47CGQFy1A3GvbQ'
 )
 
 run(input, num_of_images)
