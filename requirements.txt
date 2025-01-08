@@ -3,4 +3,5 @@ langchain_community
 langchain_unstructured
 langchain_huggingface
 streamlit
-gdown
+wget
+duckdb
