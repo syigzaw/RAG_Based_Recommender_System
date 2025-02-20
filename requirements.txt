@@ -3,5 +3,4 @@ langchain_community
 langchain_unstructured
 langchain_huggingface
 streamlit
-wget
-duckdb
+google-api-python-client

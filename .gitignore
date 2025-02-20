@@ -1,9 +1,7 @@
 .ipynb_checkpoints/
 .locks/
-models--sentence-transformers--all-mpnet-base-v2/
-images/
+secrets.toml
+images*/
 image_base64.tsv
 images.zip
 total_300k.tsv
-index.faiss
-index.pkl
