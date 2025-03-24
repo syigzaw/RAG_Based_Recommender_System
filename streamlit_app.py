@@ -37,7 +37,7 @@ def getImages(result):
         request = service.files().get_media(fileId=file[0]['id'])
         file = Image.open(BytesIO(request.execute()))
 
-    return file, result
+    return file, result[1]
 
 def run(input, num_of_images):
     if not input or not num_of_images:
