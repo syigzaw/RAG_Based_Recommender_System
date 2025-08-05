@@ -1,6 +1,6 @@
-faiss-cpu
-langchain_community
-langchain_unstructured
-langchain_huggingface
-streamlit
-google-api-python-client
+faiss-cpu==1.9.0.post1
+langchain_community==0.3.9
+langchain_unstructured==0.1.6
+langchain_huggingface==0.1.2
+streamlit==1.40.2
+google-api-python-client==2.161.0
