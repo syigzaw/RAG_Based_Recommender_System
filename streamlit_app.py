@@ -46,6 +46,9 @@ def run(input, num_of_images):
     try:
         loader = UnstructuredLoader(web_url=input)
         docs = [doc.page_content for doc in loader.lazy_load()]
+        if len(docs) < 10:
+            st.text("Access to this website was blocked.")
+            return
         k = num_of_images//len(docs) + 1
     except:
         docs = [input]
